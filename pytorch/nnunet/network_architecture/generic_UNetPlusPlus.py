@@ -178,7 +178,7 @@ class Generic_UNetPlusPlus(SegmentationNetwork):
     MAX_NUMPOOL_2D = 999
     MAX_FILTERS_2D = 480
 
-    use_this_for_batch_size_computation_2D = 19739648
+    use_this_for_batch_size_computation_2D = 19739648 * 2
     use_this_for_batch_size_computation_3D = 520000000 * 2  # 505789440
 
     def __init__(self, input_channels, base_num_features, num_classes, num_pool, num_conv_per_stage=2,
